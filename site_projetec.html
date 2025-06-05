@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFMG Sabará - Esportes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      background-color: #00695c;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #004d40;
+      border-radius: 4px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form input,
+    form select,
+    form textarea,
+    form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    form button {
+      background-color: #00695c;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    form button:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #004d40;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Esportes IFMG Sabará</h1>
+    <nav>
+      <ul>
+        <li><a href="#reclamacoes">Reclamações</a></li>
+        <li><a href="#oficinas">Oficinas do PCEJ</a></li>
+        <li><a href="#reserva">Reserva de Quadra</a></li>
+        <li><a href="#materiais">Empréstimo de Materiais</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="reclamacoes">
+      <h2>Enviar Reclamação</h2>
+      <form action="file:///C:/Users/arnet/OneDrive/Área%20de%20Trabalho/vscode/confirmacao.html" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label for="curso">Curso:</label>
+        <input type="text" name="curso" required>
+
+        <label for="tipo">Tipo:</label>
+        <select name="tipo">
+          <option value="quadra">Quadra</option>
+          <option value="materiais">Materiais Esportivos</option>
+        </select>
+
+        <label for="mensagem">Reclamação:</label>
+        <textarea name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="oficinas">
+      <h2>Inscrição nas Oficinas do PCEJ</h2>
+      <form action="file:///C:/Users/arnet/OneDrive/Área%20de%20Trabalho/vscode/confirmacao.html" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label for="curso">Curso:</label>
+        <input type="text" name="curso" required>
+
+        <label for="oficina">Oficina:</label>
+        <select name="oficina">
+          <option value="futsal">Futsal</option>
+          <option value="volei">Vôlei</option>
+          <option value="peteca">Peteca</option>
+          <option value="xadrez">Xadrez</option>
+          <option value="handebol">Handebol</option>
+        </select>
+
+        <button type="submit">Inscrever</button>
+      </form>
+    </section>
+
+    <section id="reserva">
+      <h2>Reserva de Hora Livre na Quadra</h2>
+      <form action="file:///C:/Users/arnet/OneDrive/Área%20de%20Trabalho/vscode/confirmacao.html" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label for="curso">Curso:</label>
+        <input type="text" name="curso" required>
+
+        <label for="data">Data:</label>
+        <input type="date" name="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" required>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+
+    <section id="materiais">
+      <h2>Empréstimo de Materiais Esportivos</h2>
+      <form action="file:///C:/Users/arnet/OneDrive/Área%20de%20Trabalho/vscode/confirmacao.html" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label for="curso">Curso:</label>
+        <input type="text" name="curso" required>
+
+        <label for="material">Material:</label>
+        <select name="material">
+          <option value="bola_futsal">Bola de Futsal</option>
+          <option value="bola_volei">Bola de Vôlei</option>
+          <option value="bola_handebol">Bola de Handebol</option>
+          <option value="peteca">Peteca</option>
+          <option value="tabuleiro_de_xadrez">Tabuleiro de Xadrez</option>
+        </select>
+
+        <button type="submit">Solicitar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IFMG Sabará - Departamento de Esportes</p>
+  </footer>
+</body>
+
+</html>
